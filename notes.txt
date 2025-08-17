@@ -1,1 +1,0 @@
-make sure to come back and add hover effects to your buttons and in the necesarry divs
