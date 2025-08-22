@@ -148,6 +148,7 @@ justify-content:flex-start;
   margin-bottom: 1rem;
   border: 1px var(--primary-green) solid;
   background: none;
+  cursor: pointer;
 }
 .btn-primary{
 background: var(--primary-green);
@@ -241,6 +242,7 @@ height: 70vh;
   padding: 0px 40px;
   border-radius: 40px;
   height: 60vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .each-why-choose-image img{
   width: 100px;
@@ -252,6 +254,11 @@ height: 70vh;
 .each-why-choose-image h4{
   line-height: 20px;
   font-size: 25px;
+}
+.each-why-choose-image:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 .img-slide{
   display: none;
@@ -295,6 +302,7 @@ height: 70vh;
   flex-direction: column;
   gap: 10px;
   /* width: 30%; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .each-doc img{
   border-radius: 35px;
@@ -370,11 +378,12 @@ height: 70vh;
   background-repeat: no-repeat;
   
 }
-.each-top-visit-image:hover{
+.each-top-visit-image:hover,.each-doc:hover{
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
 .testimonial-div{
   display: flex;
   flex-direction: column;
@@ -391,12 +400,13 @@ height: 70vh;
   /* flex-wrap: wrap; */
   gap: 20px;
 }
+.testimonial-images img{
+  width: 300px;
+ }
+
 .testimonial-images img:hover{
   transform: scale(1.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.screen-124{
-  display: block;
 }
 footer{
   /* height: 517px; */
@@ -532,8 +542,12 @@ display:none;
  }
 
 }
-@media screen and (max-width: 124px) {
-  .screen-124{
+@media (min-width:801px)and (max-width: 1023px){
+  .hero-content2{
+    display: flex;
+  }
+  .hero-content{
     display: none;
   }
+
 }
